@@ -29,10 +29,11 @@ import UIKit
 
 let data = ("<html>", 200, "ok", 12.34)
 
+data.0
 
+let named = (body:"<html>",statusCode: 200, statusMessage:"OK",dataSize: 12.34)
 
-
-
+named.body
 
 
 

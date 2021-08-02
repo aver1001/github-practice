@@ -25,6 +25,23 @@ import UIKit
  # Tuple Matching
  */
 
+let reslolution = (1920.0,1080.0)
+
+if reslolution.0 == 3840 && reslolution.1 == 2160{
+    print("4K")
+}
+
+
+switch  reslolution {
+case let(w,h) where w/h == 16.0 / 9.0:
+    print("16:9")
+case (3840...4096,2160):
+    print("4K")
+case (_,1080):
+    print("1080p")
+default:
+    break
+}
 
 
 
@@ -35,11 +52,10 @@ import UIKit
 
 
 
-
-
-
-
-
+func convertToTuple(name:String,age:Int,address:String) -> (name:String,age:Int,address:String){
+    let a = (name:name,age:age,address:address)
+    return a
+}
 
 
 

@@ -28,7 +28,9 @@ import UIKit
  ![tuple-expr](tuple-expr.png)
  */
 
+let i = (12,34)
 
+let data = ("<html>",200,"OK",12.34)
 
 
 
@@ -42,8 +44,12 @@ import UIKit
  ## Explicit Member Expression
  ![eme](eme.png)
  */
+data.0
+data.self
 
-
+var mutableTuple = data // 가변성
+mutableTuple.1 = 404
+mutableTuple.1
 
 
 
